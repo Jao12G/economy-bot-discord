@@ -1,0 +1,52 @@
+//      command fishing rod      //
+
+Command trigger : <prefix>buy fishing rod
+Variables : fishing rod, money
+
+
+$nomention
+$onlyIf[$getUserVar[money]>=1250; You do not have enough money!]
+$title[successful purchase]
+$color[ff00be]
+$description[$username you bought a fishing rod for 1250$ !] 
+$setUserVar[money;$sub[$getUserVar[money];1250]]
+$setUserVar[fishing rod;$sum[$getUserVar[fishing rod];1]]
+
+//      command gun      //
+
+Command trigger : <prefix>buy gun
+Variables : gun, money
+
+$nomention
+$onlyIf[$getUserVar[money]>=50235; You do not have enough money!]
+$title[successful purchase]
+$color[ff00be]
+$description[$username you bought a Gun for 50,235$ !] 
+$setUserVar[money;$sub[$getUserVar[money];50235]]
+$setUserVar[gun;$sum[$getUserVar[gun];1]]
+
+//      command computer      //
+
+Command trigger : <prefix>buy computer
+Variables : pc, money
+
+$nomention
+$onlyIf[$getUserVar[money]>=26386; You do not have enough money!]
+$title[successful purchase]
+$color[ff00be]
+$description[$username you bought a computer for 26,386$ !] 
+$setUserVar[money;$sub[$getUserVar[money];26386]]
+$setUserVar[pc;$sum[$getUserVar[pc];1]]
+
+//      command ammo      //
+
+Command trigger : <prefix>buy ammo
+Variables : ammo, money
+
+$nomention
+$onlyIf[$getUserVar[money]>=100; You do not have enough money!!]
+$title[successful purchase]
+$color[ff00be]
+$description[$username you bought a computer for 1,000$ !] 
+$setUserVar[money;$sub[$getUserVar[money];1000]]
+$setUserVar[ammo;$sum[$getUserVar[ammo];30]]
