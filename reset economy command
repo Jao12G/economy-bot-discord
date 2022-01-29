@@ -1,0 +1,17 @@
+Command trigger : <prefix>reset economy
+Variables : money, bank, fish, pc, gun, fishing rod
+
+
+//      command      //
+
+$nomention
+$onlyAdmin[only admins can reset the economy]
+$resetUserVar[money]
+$resetUserVar[bank]
+$resetUserVar[fish]
+$resetUserVar[pc]
+$resetUserVar[gun]
+$resetUserVar[fishing rod]
+$title[Reset]
+$description[the economy was reset successfully]
+$color[$random[15;99999]]
