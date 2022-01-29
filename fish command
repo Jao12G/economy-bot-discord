@@ -1,0 +1,40 @@
+//      command fish      //
+
+
+Command trigger : <prefix>fish
+Variables : fishing rod, confia
+
+
+$nomention
+$title[**fishing**] 
+$color[000000]
+$footer[🎣]
+$addTimestamp
+$onlyIf[$getUserVar[fishing rod]>=1;You don't have a fishing rod! buy in store < <prefix>store >]
+
+$description[you fished in the river and caught $randomText[a 🐟;a 🐠;a 🐡;a 🥾]
+you want to sell or save type <prefix>save or <prefix>sell.]
+$cooldown[5s;you need to wait **%time%** to fish again.]
+$setUserVar[confia;$sum[$getUserVar[confia];1]]
+
+//      command sell      //
+
+Command trigger : <prefix>sell
+Variables : money, confia
+
+$nomention
+$onlyIf[$getUserVar[confia]>=1; first you need to fish use the <prefix>fish command to fish]
+$title[**Sold**]
+$description[You sold the fish for $random[0;500]$ !]
+$setUserVar[money;$sum[$getUserVar[money];$random[0;500]]]
+$setUserVar[confia;$sub[$getUserVar[confia];1]]
+
+//      command save      //
+
+Command trigger : <prefix>save 
+Variables : fish, confia
+
+$nomention
+$onlyIf[$getUserVar[confia]>=1;first you need to fish use the <prefix>fish command to fish]$title[**Fish saved successfully**]
+$setUserVar[fish;$sum[$getUserVar[fish];1]]
+$setUserVar[confia;$sub[$getUserVar[confia];1]]
