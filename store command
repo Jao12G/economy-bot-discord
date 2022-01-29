@@ -1,0 +1,30 @@
+Command trigger : <prefix>store
+Variables : 
+
+
+
+
+//      command      //
+
+$nomention
+$title[Store]
+$description[**$username welcome**
+
+**Items for sale**
+
+**fishing rod** 
+price: 1,250$!
+
+**Gun** 
+price: 50,235$!
+
+**ammo (for gun)** 
+price: 1,000$! cada 30 balas
+
+**Computer**
+price: 26,386$!
+
+
+]
+$color[ff00be]
+$footer[use +buy <item> to buy some item]
