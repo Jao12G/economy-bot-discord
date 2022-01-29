@@ -1,0 +1,16 @@
+
+Command trigger : <prefix>pay
+Variables : money
+
+
+
+//      command      //
+
+$setUserVar[money;$sum[$getUserVar[money;$mentioned[1]];$message[2]];$mentioned[1]]
+$setUserVar[money;$sub[$getUserVar[money];$message[2]]]
+$onlyIf[$message[2]<$getUserVar[money;$authorID];you do not have enough money]
+$nomention
+$color[$random[0;9999]]
+$allowMention
+$title[Sending]
+$description[You sent to <@$mentioned[1]> **$message[2]** $!]
