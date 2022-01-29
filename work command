@@ -1,0 +1,15 @@
+Command trigger : <prefix>work
+
+Variables : money
+
+
+
+//      Command      //
+
+$nomention
+$title[**$username has worked**]
+$description[
+$username worked as a $randomText[farmer;doctor;garbageman;pharmaceutical;hair stylist;Baker;bricklayer] and received $random[250;750] $.]
+$color[00ff00]
+$setUserVar[money;$sum[$getUserVar[money];$random[250;750]]]
+$cooldown[5m;don't people hate working? come back in %time% to work again.]
