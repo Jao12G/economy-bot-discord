@@ -3,5 +3,6 @@
  
   a discord bot made from a simple language known as BDScript
   
-  <a href="https://botdesignerdiscord.com/">🔗 • download app</a>
-  <b href="https://nilpointer-software.github.io/bdfd-wiki/guides/bdscript2.html">📙 • BDScript wiki!</b>
+  <a align="left" href="https://botdesignerdiscord.com/">🔗 • download app</a>
+  
+  <a align="left" href='https://botdesignerdiscord.com/'>📙 • BDScript wiki</a>
