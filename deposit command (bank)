@@ -1,0 +1,11 @@
+Command trigger : <prefix>deposit
+Variables : money, bank
+
+//      command      //
+
+$nomention
+$argsCheck[1;you need to put an amount to deposit]
+$onlyIf[$getUserVar[money]>=0;You do not have enough money!]
+$setUserVar[money;$sub[$getUserVar[money];$message]]
+$setUserVar[bank;$sum[$getUserVar[bank];$message]]
+deposit made successfully $message $ ✅
