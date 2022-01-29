@@ -19,7 +19,7 @@ $description[
 **Guns** 🔫 : $getUserVar[gun]
 
 
-**Ammunition** 🎯 : $getUserVar[ammo]
+**Ammo** 🎯 : $getUserVar[ammo]
 
 
 **Cell** 📱 : $getUserVar[cell]
