@@ -1,0 +1,11 @@
+Command trigger : <prefix>withdraw
+Variables : money, bank
+
+//      command      //
+
+$nomention
+$argsCheck[1;you need to put a value to withdraw!]
+$onlyIf[$getUserVar[bank]>=0;You do not have enough money!]
+$setUserVar[bank;$sub[$getUserVar[bank];$message]]
+$setUserVar[money;$sum[$getUserVar[money];$message]]
+Money successfully withdrawn $message $ ✅
